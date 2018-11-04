@@ -1,8 +1,10 @@
 
 
-### Bugfix
+### IDA7.1_SP
 
 ##### 1. Fixed shortcuts do not work in non-english input method for IDA7.1. Eg: F2, tab, ctrl+enter etc.
+##### 2. Added load bundle for open dialog (The official Qt does not support this feature, but this is suitable for ida )
+
 
 ```
 Replace the "libqcocoa.dylib" to 
@@ -15,16 +17,16 @@ Replace the "libqcocoa.dylib" to
 
 ```
 md5 libqcocoa.dylib
-MD5 (libqcocoa.dylib) = 09ead6dd6d40a32ba1ec470f3b830ee3
+MD5 (libqcocoa.dylib) = 310883a9e06c16a126d1e2e6918a513c
 
 shasum libqcocoa.dylib
-b70d5dd983bbd852b1066318e84788279e8d08e2  libqcocoa.dylib
+f9dbe925262ac9b79ca1c5d4a9423efaa00d5e7f  libqcocoa.dylib
 ```
 
 
 
-##### Recompile Qt5.6
-##### **Download** 
+##### Recompile Qt5.6.3
+##### **Download (Xcode10 supported)** 
 
 ```
 https://download.developer.apple.com/Developer_Tools/Xcode_7.3.1/Xcode_7.3.1.dmg
